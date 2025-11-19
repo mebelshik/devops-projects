@@ -395,7 +395,30 @@ projects/final-mlops-project/
 
 ---
 
-## КАКИЕ SKILLBOX МОДУЛИ ИСПОЛЬЗОВАТЬ / ПРОПУСТИТЬ
+## ЭТАП 4: ОПЦИОНАЛЬНО (ПОСЛЕ ТРУДОУСТРОЙСТВА)
+
+### НЕДЕЛЯ 17+: Kubernetes (Бонус для senior позиций)
+**Когда**: После получения первого оффера MLOps
+**Почему**: 
+- Требуется в 30-40% вакансий (в основном крупные компании)
+- Senior-уровень навык
+- AWS/GCP managed services (SageMaker, Vertex) часто достаточно
+
+**Skillbox модули**:
+- ✅ "Kubernetes. Часть 1-2" (если есть в курсе)
+- ✅ Deployment ML моделей в K8s (via Kubeflow или KServe)
+
+**Практика**: `kubernetes/`
+```
+├── deployment.yaml         # Pod + Service
+├── statefulset.yaml        # Для ML моделей
+├── helm/                   # Helm charts
+└── kubeflow/               # ML-specific K8s
+```
+
+**Когда учить**: На второй работе или для senior позиции, не на старте
+
+---
 
 ### ✅ ИСПОЛЬЗОВАТЬ (обязательно):
 1. Основы Python. Часть 2 (типы, функции)
