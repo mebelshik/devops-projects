@@ -1,10 +1,10 @@
-name: CI
+name: Test
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   test:
@@ -15,10 +15,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pytest
+      - name: Install pytest
+        run: pip install pytest
       - name: Run tests
-        run: |
-          pytest -v || true
+        run: pytest -v || true
