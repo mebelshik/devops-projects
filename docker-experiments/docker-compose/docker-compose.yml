@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  hello_app:
+    build: ../hello_app
+    ports:
+      - "8080:8080"
+  redis:
+    image: redis:7-alpine
